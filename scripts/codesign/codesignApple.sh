@@ -86,7 +86,7 @@ install_name_tool -change   /Users/jenkins/jenkins/workspace/cbdeps-platform-bui
 
 echo ------- Unlocking keychain -----------
 set +x
-security unlock-keychain -p `cat ~/.ssh/security-password.txt` ${HOME}/Library/Keychains/login.keychain
+security unlock-keychain -p `cat ~/.ssh/security-password.txt` /Users/couchbase/Library/Keychains/login.keychain
 
 ###define codesigning flags and cert id
 ###use cb.entitlement.  mainly because of packaged adoptopenjdk
